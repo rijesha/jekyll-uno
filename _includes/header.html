@@ -13,6 +13,7 @@
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
         <hr class="panel-cover__divider">
+        <p class="panel-cover__title panel-subtitle">{{ site.about-author-short }}</p>
         <p class="panel-cover__description">{{ site.description }}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
@@ -26,6 +27,26 @@
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
+            
+            {% if site.author.github_username %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.instagram_username %}
+            <!-- GitHub -->
+            <li class="navigation__item">
+              <a href="https://www.instagram.com/{{ site.author.instagram_username }}" title="{{ site.author.instagram_username }} on Instagram" target="_blank">
+                <i class="icon icon-social-instagram"></i>
+                <span class="label">Instagram</span>
+              </a>
+            </li>
+          {% endif %}
 
             {% if site.author.twitter_username %}
               <!-- Twitter -->
@@ -47,25 +68,35 @@
               </li>
             {% endif %}
 
-            {% if site.author.linkedin_username %}
-              <!-- LinkedIn -->
+            {% if site.author.youtube_username %}
+              <!-- GitHub -->
               <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
-                  <span class="label">LinkedIn</span>
+                <a href="https://www.youtube.com/{{ site.author.youtube_username }}" title="{{ site.author.youtube_username }} on YouTube" target="_blank">
+                  <i class="icon icon-social-youtube"></i>
+                  <span class="label">YouTube</span>
                 </a>
               </li>
             {% endif %}
 
-            {% if site.author.github_username %}
+            {% if site.author.flickr_username %}
               <!-- GitHub -->
               <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
-                  <span class="label">GitHub</span>
+                <a href="https://www.flickr.com/{{ site.author.flickr_username }}" title="{{ site.author.flickr_username }} on Flickr" target="_blank">
+                  <i class="icon icon-social-flickr"></i>
+                  <span class="label">Flickr</span>
                 </a>
               </li>
             {% endif %}
+
+            {% if site.author.linkedin_username %}
+            <!-- LinkedIn -->
+            <li class="navigation__item">
+              <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
+                <i class="icon icon-social-linkedin"></i>
+                <span class="label">LinkedIn</span>
+              </a>
+            </li>
+          {% endif %}
 
             {% if site.author.email %}
               <!-- Email -->

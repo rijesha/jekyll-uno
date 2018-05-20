@@ -1,16 +1,22 @@
 # Site settings
-title: Uno
-description: 'Uno - a minimal, responsive theme for Jekyll'
-url: 'http://rijesha.com/uno'
-baseurl: '/uno'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+title: Rijesh Augustine
+description: 'A blog where I detail some of the fun projects I am working on.'
+url: 'http://rijesha.com'
+baseurl: ''
+google_analytics: 'UA-112378235-1'
+disqus_shortname: 'rijesha'
 
 author:
   name: 'Rijesh Augustine'
   twitter_username: rijesha
   github_username:  rijesha
-  linkedin_username:  rijesha
+  #linkedin_username:  rijesha
+  youtube_username: rijesha
+  flickr_username: rijesha
+  instagram_username: rijesha
+
+about-author-short: 'Tree Climber / Photographer / Peafowl Enthusiast'
+about-author: I keep bees and fly RC airplanes. I occasionaly take photos too. Currently im in a Masters program @ the University of Alberta and working with Radar. Interests include astrophotography, functional programming and STEM education.
 
 defaults:
   -

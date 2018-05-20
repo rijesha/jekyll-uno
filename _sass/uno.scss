@@ -1235,13 +1235,19 @@ hr {
 .panel-cover__description {
 	margin: 0 30px; }
 
+.panel-cover__about_author {
+	margin: 0 30px; }
+	
 .panel-cover__divider {
 	width: 50%;
 	margin: 20px auto;
 	border-top: 1px solid rgba(255, 255, 255, 0.14); }
 
 .panel-cover__divider--secondary {
-	width: 15%; }
+	width: 30%; }
+
+.panel-cover__divider--tertiary {
+	width: 15%; }	
 
 .panel-main {
 	display: table;
