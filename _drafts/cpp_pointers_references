@@ -1,0 +1,45 @@
+https://www.geeksforgeeks.org/pointers-vs-references-cpp/
+
+Pointers is a vaiariable that holds memory  address of another variable.
+to access the memory location that a pointer points to we can use the * operator.
+
+
+References A reference variable is an alias. Another name for a variable that already esists. A reference stores the address of an object.
+
+i.e
+
+int i = 3;
+
+//pointer to varaible i
+int *ptr = &i;
+
+//A reference for i
+int &ref = i;
+
+
+Pointers can be reassigend.
+
+int x = 5;
+int y = 6;
+int *p;
+p =  &x;
+p = &y;
+
+references must be assigned at initialization
+
+
+https://www.geeksforgeeks.org/when-do-we-pass-arguments-by-reference-or-pointer/
+
+http://www.programmerinterview.com/index.php/data-structures/difference-between-stack-and-heap/
+Create objects on the stack by doing something like
+Member m;
+
+Create an object on the heap like
+Member* m = new Member();
+
+using the new keywords means you will need to use the delete later on. You will also need the pointer m to delete the object.
+If you close the function without a reference or deleting you may cause a memory leak.
+
+Allocating memory on the stack is far faster but is volatile.
+
+https://people.cs.clemson.edu/~levinej/courses/S15/1020/handouts/lec01/MemoryAndMalloc.pdf
